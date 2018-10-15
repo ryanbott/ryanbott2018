@@ -7,8 +7,7 @@ import tigwLogo from '../img/tigw-logo.png'
 
 
 const HomeHero = ({ siteTitle, data }) => (
-<section className="hero home-hero">
-  <div className="row">
+<section className="hero row home-hero">
     <div className="home-hero__text">
       <h1>Ryan Bott
         <span className="home-hero__text--lead"> is a <br />rare combination</span><br/>
@@ -19,7 +18,6 @@ const HomeHero = ({ siteTitle, data }) => (
       </h1>
         <span className="home-hero__text--attribute">— Kelley Jones, President of Freestyle Creative</span>
     </div>
-  </div>
 
     <div className="podcast">
       <span className="podcast--number">04.</span>

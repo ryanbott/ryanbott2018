@@ -9,6 +9,15 @@
   letter-spacing: 4.37px;
 }
 
+@mixin body-font {
+  font-family: "Proxima Nova";
+  font-size: 1.25rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+  color: white;
+}
+
 @mixin hero-large {
   font-family: var(--prox);
   display: block;

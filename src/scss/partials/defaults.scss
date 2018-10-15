@@ -11,12 +11,13 @@ html, body {
 	background: black;
 }
 body {
-	background-color: red;
+	background-color: black;
 	margin: 0;
 }
 section {
 	clear: both;
 }
+
 h1, h2, h3, h4, h5, h6 {
 	-webkit-font-smoothing:antialias;
 	color: white;
@@ -40,17 +41,16 @@ h2 {
 	font-weight:400;
 }
 p, li {
-	font-size: 18px;
-	letter-spacing:1px;
-	line-height: 24px;
-	color: var(--main);
+	@include body-font;
 }
+
 a {
 	text-decoration: none;
 	&:hover {
 		text-decoration:underline;
 	}
 }
+
 .header_line {
 	background: var(--teal);
 	background-color: var(--teal);

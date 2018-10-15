@@ -1,21 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-import HomeHero from '../components/home-hero'
 
 
-const IndexPage = ({data}) => (
+import HomeHero from '../components/homeHero'
+import ContentArea from '../components/contentArea'
+import HalfBlock from '../components/halfBlock'
+
+import ClientSpotlight from '../components/clientSpotlight'
+import CodeTools from '../components/codeTools'
+import TheProcess from '../components/theProcess'
+import ContactForm from '../components/contactForm'
+
+
+
+const IndexPage = ({siteTitle, data}) => (
   <main>
   <HomeHero />
 
-<div className="row">
-<div className="contentArea">
-    <h2>I love the creative process, ideas swirling, calculations forever being crunched in my head. </h2>
-    <p>I’m a Web Developer and UX Designer living and working in Chicago. I’m passionate about creating and building new projects and growing the local community.</p>
-  <br />
-</div>
-</div>
+  <ContentArea />
 
+
+
+  <ClientSpotlight/>
+  <CodeTools/>
+  <TheProcess/>
 
 <section id="featuredBlog">
   <div className="featuredBlog">
@@ -60,6 +69,9 @@ const IndexPage = ({data}) => (
     </div>
   </div>
 </section>
+
+<ContactForm/>
+
 
 </main>
 )

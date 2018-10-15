@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
-const ContactPage = () => (
+const ContactForm = () => (
   <div className="row">
     <div className="contentArea">
       <h2>I&#039;m always looking for new projects, ideas and conversations to have coffee over</h2>
@@ -23,4 +25,4 @@ const ContactPage = () => (
   </div>
 )
 
-export default ContactPage
+export default ContactForm
