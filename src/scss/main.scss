@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*Node module css imports*/
+/* @import 'normalize.css/normalize.css'; */
+@import 'mixins.scss';
+
+/*Site specific css imports*/
+@import 'partials/defaults.scss';
+@import 'partials/type.scss';
+@import 'partials/header.scss';
+@import 'partials/nav.scss';
+@import 'partials/home-hero.scss';
+@import 'partials/podcast.scss';
+@import 'partials/blocks.scss';
+@import 'partials/form.scss';
+@import 'partials/footer.scss';
+
+
+/*CSS Variable declarations*/
+:root {
+  --main: #FDFEFF;
+  --teal: #5DC7CC;
+  --main: #333;
+  --blue1: #5CC1C3;
+  --blue2: #1688AD;
+  --fade1: rgba(62, 68, 70, .99);
+  --fade2: rgba(27, 97, 110, .90);
+  --offwhite: #ECECE4;
+  --yellow: #FDC85A;
+
+  --bluegrad: linear-gradient(230deg, #5CC1C3 0%, #1688AD 100%);
+
+
+  /*foggy night  color scheme*/
+  --darkblue: #4C5156;
+  --gold: #8d765a;
+  --midblue: #758092;
+  --lightblue: #99A1A8;
+  --midwhite: #D8DDDD;
+
+  --prox: "ProximaNova-Regular", Helvetica, sans-serif;
+  --sign: "SignPainter-HouseScript", cursive;
+}
+
+/*Breakpoints for postcss-custom-media*/
+/*@custom-media --desktop-up (min-width:1100px);*/
+@custom-media --desktop-min (min-width:128.05);
+@custom-media --desktop-max (max-width:1280);
+@custom-media --tablet-min (min-width:781.05px);
+@custom-media --tablet-max (max-width:781px);
+@custom-media --mobile-min (min-width:541.05px);
+@custom-media --mobile-max (max-width:541px);
+@custom-media --tiny-min (min-width:361.05px);
+@custom-media --tiny-max (max-width:361px);

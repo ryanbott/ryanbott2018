@@ -1,0 +1,26 @@
+@mixin bg-red {
+  background-color: black;
+}
+
+@mixin body-large {
+  font-family: "Proxima Nova";
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 4.37px;
+}
+
+@mixin hero-large {
+  font-family: var(--prox);
+  display: block;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 16px;
+  text-transform: uppercase;
+  color: white;
+}
+
+@mixin script-font {
+  font-family: var(--sign);
+  color: white;
+}
