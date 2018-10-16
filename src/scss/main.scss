@@ -11,7 +11,9 @@
 @import 'partials/nav.scss';
 @import 'partials/home-hero.scss';
 @import 'partials/podcast.scss';
+@import 'partials/code-tools.scss';
 @import 'partials/blocks.scss';
+@import 'partials/process.scss';
 @import 'partials/form.scss';
 @import 'partials/footer.scss';
 
@@ -30,6 +32,7 @@
 
   --bluegrad: linear-gradient(230deg, #5CC1C3 0%, #1688AD 100%);
 
+  --rainbow-grad: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
 
   /*foggy night  color scheme*/
   --darkblue: #4C5156;
