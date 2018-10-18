@@ -101,7 +101,7 @@ const Footer = ({ siteTitle }) => (
       </div>
 
       <div className="copyright">
-        <span>&copy; ryanbott.com {new Date().getFullYear()}</span>
+        <span>&copy; Ryan Bott {new Date().getFullYear()}</span>
       </div>
     </div>
   </div>
