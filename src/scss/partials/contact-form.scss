@@ -12,6 +12,8 @@
     textarea[type="text"] {
       @include body-font;
 
+      background-color: #2d2d2d;
+      color: white;
       padding: .8rem 1em;
       width: 100%;
       border: none;
@@ -19,6 +21,9 @@
       margin-bottom: 1em;
       &:focus { outline: var(--teal) auto 2px; }
       &:invalid { border-bottom: 2px solid #fb0202; }
+      &::placeholder {
+        color: var(--fate);
+      }
     }
 
     textarea {

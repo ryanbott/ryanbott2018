@@ -16,7 +16,7 @@
   }
 
   &__css {
-    background: darkblue;
+    background: var(--rainbow-grad);
     grid-column: span 4;
     grid-row: span 2;
   }
