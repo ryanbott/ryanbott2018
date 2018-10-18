@@ -33,3 +33,29 @@
   font-family: var(--sign);
   color: white;
 }
+
+
+@mixin animation {
+  @keyframes animatedgradient {
+  	0% {
+  		background-position: 0% 50%;
+  	}
+  	50% {
+  		background-position: 100% 50%;
+  	}
+  	100% {
+  		background-position: 0% 50%;
+  	}
+  }
+}
+
+@mixin button-animation {
+  @keyframes animatedgradient {
+  	from {
+  		background-position: 0% 50%;
+  	}
+  	to {
+  		background-position: 100% 50%;
+  	}
+  }
+}

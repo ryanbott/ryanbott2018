@@ -34,46 +34,75 @@ const SocialLinks = [
 ]
 
 const Footer = ({ siteTitle }) => (
-  <footer id="footer" className="footer">
-  <div className="footer_main">
+<footer id="footer" className="footer">
+  <div className="footer-top">
     <div className="container row">
-      <div className="c_3_block">
-        <div className="footer_block">
-        <div className="footer_logo">
-            <a href="/"><img src={FooterLogo} alt="Ryan Bott" /></a>
-        </div>
+      <h4>Explore</h4>
+      <div className="footer__column">
+        <ul>
+          {FooterNav.map(link => (
+            <li key={link.name}>
+              <a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
       </div>
+
+      <div className="footer__column">
+        <ul>
+          {FooterNav.map(link => (
+            <li key={link.name}>
+              <a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
       </div>
-  <div className="c_6">
-    <p>Explore</p>
-    <ul>
-      {FooterNav.map(link => (
-        <li key={link.name}>
-          <p><a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a></p>
-        </li>
-      ))}
-    </ul>
-  </div>
-
-  <div className="footer_social">
-    <ul>
-      {SocialLinks.map(link => (
-        <li key={link.name}>
-          <a href={link.link} className={link.name.toLowerCase()} target="_blank" alt={link.name}>{link.name}</a>
-        </li>
-      ))}
-    </ul>
-  </div>
-
-          </div>
-  </div>
-  <div className="footer_bottom">
-    <div className="quotes">
-            <p>"The fears are paper tigers. You can do anything you decide to do."</p>
-      <span className="author">- Amelia Earhart</span>
     </div>
-    <div className="copyright">
-      <span>&copy; ryanbott.com</span>
+
+
+    <div className="container row">
+      <h4>Recent Articles</h4>
+      <div className="footer__column">
+        <ul>
+          {FooterNav.map(link => (
+            <li key={link.name}>
+              <a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="footer__column">
+        <ul>
+          {FooterNav.map(link => (
+            <li key={link.name}>
+              <a href={link.link} className={link.name.toLowerCase()}  alt={link.name}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div className="header-logo">
+    <a href="/" aria-label="Return to Ryan Bott's homepage">r.b</a>
+  </div>
+
+  <div className="footer-bottom">
+    <div className="container row">
+      <div className="footer-bottom__social">
+        <ul>
+          {SocialLinks.map(link => (
+            <li key={link.name}>
+              <a href={link.link} className={link.name.toLowerCase()} target="_blank" alt={link.name}>{link.name}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="copyright">
+        <span>&copy; ryanbott.com {new Date().getFullYear()}</span>
+      </div>
     </div>
   </div>
 </footer>
